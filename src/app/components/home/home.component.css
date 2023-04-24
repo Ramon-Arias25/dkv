@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    margin-top: -15vh;
+    height: auto;
+}
+main{
+    margin: 50px 80px ;
+}
+
+div{
+	box-sizing:  border-box
+}
+  
+.galeria{
+	display: flex;
+  	flex-wrap: nowrap;
+    max-width: 1600;
+    margin: 90px 0px ;
+}
+div.contenedor{
+    flex: 1 0 auto;
+    align-items: flex-start;
+    margin: 0 5px;
+    width: 312px;
+    height: 665px;
+    /* float: left; */
+    transition: width .4s;
+    flex-grow: 1; /* Permite que el elemento se expanda */
+    flex-shrink: 1; /* Permite que el elemento se reduzca */
+    /* position: relative; */
+}
+.galeria div:hover {
+    width: 800px;
+    opacity: 1;
+    }
+#uno{
+    background-image: url("../../../assets/Rectángulo 3170-4.png");
+    background-size: cover;
+    background-position: center;
+}
+#uno:hover ~ div {
+    flex-basis: calc((1600px - 312px) / 4);
+}
+
+#dos{
+    background-image: url("../../../assets/Rectángulo 3170-3@2x.png");
+    background-size: cover;
+    background-position: center;
+}
+#dos:hover ~ div {
+    flex-basis: calc((1600px - 800px) / 4);
+}
+#tres{
+    background-image: url("../../../assets/Rectángulo 3170-2@2x.png");
+    background-size: cover;
+    background-position: center;
+}
+#tres:hover ~ div {
+    flex-basis: calc((1600px - 800px) / 4);
+}
+#cuatro{
+    background-image: url("../../../assets/Rectángulo 3170@2x.png");
+    background-size: cover;
+    background-position: center;
+}
+#cuatro:hover ~ div {
+    flex-basis: calc((1600px - 800px) / 4);
+}
+#cinco{
+    background-image: url("../../../assets/Rectángulo 3170-1@2x.png");
+    background-size: cover;
+    background-position: center;
+}
+#cinco:hover ~ div {
+    flex-basis: calc((1600px - 800px) / 4);
+}
+.texto{
+    margin: 515px 0 0 40px;
+    position: relative;
+    height: inherit;
+
+}
+p {
+    margin-top: 0px;
+}
+
+.texto .display-none {
+    display: none;
+}
+#uno:hover + .texto.display-none {
+    display: inline;
+}
