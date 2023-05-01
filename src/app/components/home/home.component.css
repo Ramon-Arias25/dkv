@@ -1,26 +1,29 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-header{
+
+header {
     margin-top: -15vh;
     height: auto;
 }
-main{
-    margin: 50px 80px ;
+
+main {
+    margin: 50px 80px;
 }
 
-div{
-	box-sizing:  border-box
+div {
+    box-sizing: border-box
 }
-  
-.galeria{
-	display: flex;
-  	flex-wrap: nowrap;
+
+.galeria {
+    display: flex;
+    flex-wrap: nowrap;
     max-width: 1600;
-    margin: 90px 0px ;
+    margin: 90px 0px;
 }
-div.contenedor{
+
+div.contenedor {
     flex: 1 0 auto;
     align-items: flex-start;
     margin: 0 5px;
@@ -28,68 +31,93 @@ div.contenedor{
     height: 665px;
     /* float: left; */
     transition: width .4s;
-    flex-grow: 1; /* Permite que el elemento se expanda */
-    flex-shrink: 1; /* Permite que el elemento se reduzca */
+    flex-grow: 1;
+    /* Permite que el elemento se expanda */
+    flex-shrink: 1;
+    /* Permite que el elemento se reduzca */
     /* position: relative; */
-}
-.galeria div:hover {
-    width: 800px;
-    opacity: 1;
-    }
-#uno{
-    background-image: url("../../../assets/Rectángulo 3170-4.png");
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
-#uno:hover ~ div {
+
+.contenedor:hover~div {
     flex-basis: calc((1600px - 312px) / 4);
 }
 
-#dos{
+.galeria div:hover {
+    width: 800px;
+    opacity: 1;
+}
+
+#uno {
+    background-image: url("../../../assets/Rectángulo 3170-4.png");
+}
+
+#dos {
     background-image: url("../../../assets/Rectángulo 3170-3@2x.png");
-    background-size: cover;
-    background-position: center;
 }
-#dos:hover ~ div {
-    flex-basis: calc((1600px - 800px) / 4);
-}
-#tres{
+
+#tres {
     background-image: url("../../../assets/Rectángulo 3170-2@2x.png");
-    background-size: cover;
-    background-position: center;
 }
-#tres:hover ~ div {
-    flex-basis: calc((1600px - 800px) / 4);
-}
-#cuatro{
+
+#cuatro {
     background-image: url("../../../assets/Rectángulo 3170@2x.png");
-    background-size: cover;
-    background-position: center;
 }
-#cuatro:hover ~ div {
-    flex-basis: calc((1600px - 800px) / 4);
-}
-#cinco{
+
+#cinco {
     background-image: url("../../../assets/Rectángulo 3170-1@2x.png");
+}
+
+.contenedor p {
+    vertical-align: bottom;
+    margin-left: 40px;
+}
+
+.contenedor p:last-child {
+    margin-bottom: 30px;
+}
+
+#tres p:first-child,
+#cinco p:first-child {
+    margin-bottom: -10px;
+}
+
+.contenedor p:last-child,
+.contenedor .unnamed-character-style-4,
+.contenedor .unnamed-character-style-11 {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.trazado {
+    background-image: url("../../../assets/Trazado 5513.svg");
     background-size: cover;
-    background-position: center;
-}
-#cinco:hover ~ div {
-    flex-basis: calc((1600px - 800px) / 4);
-}
-.texto{
-    margin: 515px 0 0 40px;
-    position: relative;
-    height: inherit;
-
-}
-p {
-    margin-top: 0px;
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-top: -30px;
+    margin-right: 60px;
+    transition: margin-right .5s ease-out, margin-top .5s ease-out, opacity .5s ease-out;
 }
 
-.texto .display-none {
-    display: none;
+.contenedor:hover .trazado {
+    opacity: 1;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    margin-top: -20px;
+    transition: margin-right .5s ease-out, margin-top .5s ease-out, opacity .5s ease-out;
 }
-#uno:hover + .texto.display-none {
-    display: inline;
+
+.cuatro:hover .trazado {
+    opacity: 1;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    margin-top: -40px;
+    transition: margin-right .5s ease-out, margin-top .5s ease-out, opacity .5s ease-out;
 }

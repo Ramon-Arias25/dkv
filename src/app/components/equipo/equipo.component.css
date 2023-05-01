@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    margin-top: -15vh;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.arrow-left{
+    background-image: url("../../../assets/arrow-left.svg");
+    background-size: cover;
+    width: 36px;
+    height: 20px;
+    opacity: 1;
+    transition: margin-right .5s ease-out, margin-top .5s ease-out, opacity .5s ease-out;
+    margin-left: -50px;
+    margin-right: 15px;
+}
+
+main {
+    margin: 50px 80px;
+}
+
+div {
+    box-sizing: border-box
+}
+
+.cliente {
+    /* max-width: 1600; */
+    margin: 104px 0px;
+}
+.contenedor{
+    width: 252px;
+    height: 468px;
+}
+
+.cliente-portada{
+    top: 179px;
+    left: 190px;
+    width: 800px;
+    height: 18px;
+    font: normal normal normal 15px/22px FS Me;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin: calc(132px - 179px) 930px 30px 0px;
+    display: flex;
+}
+
+.wrap-p{
+    top: 289px;
+    left: 190px;
+    width: 800px;
+    height: 118px;
+    letter-spacing: 0px;
+}
+
+#uno{
+    background-image: url("../../../assets/Rectángulo 3308@2x.png");
+}
+
+#dos{
+    background-image: url("../../../assets/Rectángulo 3308-2@2x.png");
+}
+
+#tres{
+    background-image: url("../../../assets/Rectángulo 3308-3@2x.png");
+
+}
+
+#cuatro{
+    background-image: url("../../../assets/Rectángulo 3308-1@2x.png");
+}
+
+/* .wrap-flecha-down {
+    border-top: 8px solid;
+    border-color: var(--unnamed-color-98a92a) ;
+}
+
+.flecha-down {
+    width:0px;
+    height:0px;
+    border-left:19px solid transparent;
+    border-right:19px solid transparent;
+    border-top:21px solid var(--unnamed-color-98a92a);
+    font-size:0px;
+    line-height:0px;
+}
+
+.wrap-flecha-down{
+    margin: 0 0px;
+    width: 252px;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+} */
+
+.contenedor:hover p:last-child {
+    opacity: 1;
+    transition: opacity 0.3s ease-out, margin-bottom 0.3s ease-out;
+    margin-bottom: 205px;
+}
+.contenedor .unnamed-character-style-16 {
+    margin-bottom: 30px;
+}
+#tres p:last-child {
+    margin-top: -30px;
+}
+
+#uno:hover p:last-child,#dos:hover p:last-child, #cuatro:hover p:last-child {
+    margin-top: -30px;
+    transition: margin-bottom 0.3s ease-out;
+}
+
+.contenedor p:last-child {
+    transition: margin-bottom 0.3s ease-out;
+}
+
+.contenedor:hover {
+    background-size: 280%;
+    transition: background-size 4s ease-out;
+}
+
+.contenedor {
+    background-size: cover;
+    background-position: center;
+    transition: background-size 4s ease-out;
+}

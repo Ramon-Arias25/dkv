@@ -67,11 +67,11 @@ ol, ul {
 
 @font-face {
     font-family: 'FS Me';
-    src: url('../assets/FSMe.ttf') format('truetype');
+    src: url('../src/assets/FSMe.ttf') format('truetype');
   }
   @font-face {
     font-family: 'LEMON MILK Pro FTR';
-    src: url('../assets/FSMe-Bold.ttf') format('truetype');
+    src: url('../src/assets/FSMe-Bold.ttf') format('truetype');
   }
   
 
@@ -109,6 +109,7 @@ ol, ul {
     --unnamed-font-size-20: 20px;
     --unnamed-font-size-22: 22px;
     --unnamed-font-size-28: 28px;
+    --unnamed-font-size-30: 30px;
     --unnamed-font-size-36: 36px;
     --unnamed-font-size-38: 38px;
     --unnamed-character-spacing-0: 0px;
@@ -120,6 +121,7 @@ ol, ul {
     --unnamed-line-spacing-30: 30px;
     --unnamed-line-spacing-45: 45px;
     --unnamed-text-transform-uppercase: uppercase;
+    --unnamed-text-alig-justify: justify ;
     }
     
     /* Character Styles */
@@ -342,3 +344,88 @@ ol, ul {
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-005650);
     }
+    .unnamed-character-style-25 {
+    font-family: var(--unnamed-font-family-lemon-milk-pro-ftr);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-30);
+    line-height: var(--unnamed-line-spacing-45);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-095751);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    }
+   
+    div{
+        box-sizing:  border-box
+    }
+    
+    .mercado{
+        max-width: 1600;
+        margin: 90px 0px ;
+    }
+    
+    .mercado-portada{
+        top: 179px;
+        left: 190px;
+        width: 800px;
+        height: 18px;
+        font: normal normal normal 15px/22px FS Me;
+        letter-spacing: 0px;
+        opacity: 1;
+        margin: calc(132px - 179px) 930px 30px 0px;
+        display: flexbox;
+    }
+    
+    .wrap-p{
+        top: 289px;
+        left: 190px;
+        width: 800px;
+        height: 118px;
+        letter-spacing: 0px;
+    }
+    
+    .wrap{
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 1600;
+        margin: 25.79px 0px 0 0 ;
+    }
+    
+    div.contenedor{
+        flex: 1 0 auto;
+        align-items: flex-start;
+        margin: 0 5px;
+        width: 380px;
+        height: 410px;
+        transition: width .4s;
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .contenedor p {
+        vertical-align: bottom;
+        margin-left: 20px;
+    }
+    
+    .unnamed-character-style-16 {
+        margin-bottom: -10px;
+        margin-top: 370px;
+    }
+    .unnamed-character-style-16{
+        text-transform: var(--unnamed-text-transform-uppercase);
+    }
+    .contenedor p:last-child {
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+    }
+    
+    .contenedor:hover p:last-child {
+        opacity: 1;
+        transition: opacity 0.3s ease-out;
+    }
+    

@@ -1,0 +1,211 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    margin-top: -15vh;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.arrow-left{
+    background-image: url("../../../assets/arrow-left.svg");
+    background-size: cover;
+    width: 36px;
+    height: 20px;
+    opacity: 1;
+    transition: margin-right .5s ease-out, margin-top .5s ease-out, opacity .5s ease-out;
+    margin-left: -50px;
+    margin-right: 15px;
+}
+
+main {
+    margin: 50px 80px;
+}
+
+div {
+    box-sizing: border-box
+}
+
+.cliente {
+    /* max-width: 1600; */
+    margin: 104px 0px;
+}
+
+.wrap,
+.contenedor,
+.contenedor p,
+.contenedor .unnamed-character-style-16,
+.contenedor .unnamed-character-style-17,
+.trazado {
+    transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out, background-size 0.3s ease-in-out;
+}
+
+.wrap {
+    position: relative;
+}
+
+.contenedor {
+    width: 430px;
+    height: 468px;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* .contenedor:hover {
+    transform: scale(1.2);
+} */
+
+.cliente-portada {
+    top: 179px;
+    left: 190px;
+    width: 800px;
+    height: 18px;
+    font: normal normal normal 15px/22px FS Me;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin: calc(132px - 179px) 930px 30px 0px;
+    display: flex;
+}
+
+.wrap-p {
+    top: 289px;
+    left: 190px;
+    width: 800px;
+    height: 118px;
+    letter-spacing: 0px;
+}
+
+.contenedor p {
+    margin: 0px 10px 0px 10px;
+}
+
+.contenedor:hover .unnamed-character-style-17 {
+    opacity: 1;
+    margin-bottom: 105px;
+}
+
+#uno:hover .unnamed-character-style-17,
+#dos:hover .unnamed-character-style-17,
+#tres:hover .unnamed-character-style-17,
+#cuatro:hover .unnamed-character-style-17,
+.contenedor .unnamed-character-style-17 {
+    transition: margin-bottom 0.3s ease-out;
+    transition: background-size 0.3s;
+}
+
+#uno,
+#dos,
+#tres,
+#cuatro,
+#cinco,
+#seis{
+    background-size: 170%;
+}
+
+.trazado {
+    background-size: cover;
+}
+
+#uno {
+    background-image: url("../../../assets/Rectángulo 3308.png");
+}
+
+#dos {
+    background-image: url("../../../assets/Rectángulo 3308-2.png");
+}
+
+#tres {
+    background-image: url("../../../assets/Rectángulo 3308-3.png");
+}
+
+#cuatro {
+    background-image: url("../../../assets/Rectángulo 3308-1.png");
+}
+
+#cuatro .unnamed-character-style-16 {
+    margin-bottom: -14px;
+}
+
+#cuatro:hover .unnamed-character-style-17 {
+    margin-top: 14px;
+}
+
+.contenedor .unnamed-character-style-17 {
+    opacity: 0;
+}
+
+.contenedor:hover .unnamed-character-style-17 {
+    opacity: 1;
+}
+
+.trazado {
+    background-image: url("../../../assets/Trazado 5513.svg");
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-top: -30px;
+    margin-right: 80px;
+    transition: margin-right 0.3s ease-out, margin-top 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.contenedor:hover .trazado {
+    opacity: 1;
+    margin-right: 40px;
+    transition: margin-right 0.3s ease-out, margin-top 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.contenedor .unnamed-character-style-16 {
+    transition: margin-left 0.3s ease-out;
+}
+
+.contenedor:hover .unnamed-character-style-16 {
+    transition: margin-left 0.3s ease-out;
+}
+
+.contenedor:hover .unnamed-character-style-17 {
+    transition: margin-left 0.3s ease-out;
+}
+
+.borde-top {
+    width: 430px;
+    height: 10px;
+    z-index: 2;
+    position: absolute;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+  
+
+.base-flecha{
+    border-top: solid 15px var(--unnamed-color-43752b);
+    z-index: 3;
+    width: 430px;
+    height: 8px;
+    transition: border-top 0.3s ease-out;
+}
+
+.punta-flecha{
+    width: 0px;
+    height: 0px;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 15px solid var(--unnamed-color-43752b);/*var(--unnamed-color-98a92a);*/
+    font-size: 0px;
+    line-height: 0px;
+    margin: auto;
+    transition: border-top 0.3s ease-out;
+}
