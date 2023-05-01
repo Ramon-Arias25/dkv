@@ -10,7 +10,6 @@ header {
     justify-content: start;
     align-items: center;
 }
-
 .arrow-left{
     background-image: url("../../../assets/arrow-left.svg");
     background-size: cover;
@@ -27,7 +26,7 @@ main {
 }
 
 div {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .cliente {
@@ -41,36 +40,33 @@ div {
 .contenedor .unnamed-character-style-16,
 .contenedor .unnamed-character-style-17,
 .trazado {
-    transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out, background-size 0.3s ease-in-out;
+    transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
 }
 
 .wrap {
-    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
     --ancho-wrap: 100%;
 }
 
 .wrap-item {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    position: absolute;
 }
 
 .contenedor {
-    /* width: 430px; */
+    width: calc(var(--ancho-wrap - 40px) / 6);
     height: 468px;
-    overflow: hidden;
 }
 
 .overflow-hidden {
     overflow: hidden;
+    position: relative;
 }
 
-/* .contenedor:hover {
-    transform: scale(1.2);
-} */
+.contenedor:hover {
+    background-size: 250%;
+}
 
 .cliente-portada {
     top: 179px;
@@ -96,12 +92,18 @@ div {
     margin: 0px 10px 0px 10px;
 }
 
-.contenedor:hover .unnamed-character-style-17 {
-    opacity: 1;
-    margin-bottom: 105px;
-    transition: margin-bottom 0.3s ease-out;
-}
 
+
+
+/* #tres .unnamed-character-style-17 {
+    margin-top: -30px;
+} */
+
+#uno:hover .unnamed-character-style-17,
+#dos:hover .unnamed-character-style-17,
+#tres:hover .unnamed-character-style-17,
+#cuatro:hover .unnamed-character-style-17,
+#cinco:hover .unnamed-character-style-17,
 .contenedor .unnamed-character-style-17 {
     transition: margin-bottom 0.3s ease-out;
     transition: background-size 0.3s;
@@ -113,8 +115,11 @@ div {
 #cuatro,
 #cinco,
 #seis{
-    background-size: 170%;
+    background-size: 200%;
+    position: relative;
 }
+
+
 
 .trazado {
     background-size: cover;
@@ -125,37 +130,41 @@ div {
 }
 
 #dos {
-    background-image: url("../../../assets/estudiobajas (1).png");
+    background-image: url("../../../assets/estudiDeBajas (1).png");
 }
 
 #tres {
-    background-image: url("../../../assets/campanasmarketing (1).png");
+    background-image: url("../../../assets/campaniasMarketing (1).png");
 }
 
 #cuatro {
-    background-image: url("../../../assets/comercialesinformes (1).png");
+    background-image: url("../../../assets/dimensionamientoAccionesComercialesEinformes (1).png");
 }
 
-#cuatro .unnamed-character-style-16 {
+/* #cuatro .unnamed-character-style-16 {
     margin-bottom: -14px;
-}
+} */
 
-#cuatro:hover .unnamed-character-style-17 {
+/* #cuatro:hover .unnamed-character-style-17 {
     margin-top: 14px;
-}
-
+} */
 #cinco {
-    background-image: url("../../../assets/geomarketingempresas (1).png");
+    background-image: url("../../../assets/geomarketingEmpresas (1).png");
 }
 
 .contenedor .unnamed-character-style-17 {
     opacity: 0;
-    transition: opacity 0.3s ease-out;
+    transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
 }
 
-.contenedor:hover .unnamed-character-style-17 {
+/* .contenedor:hover .unnamed-character-style-17 {
     opacity: 1;
     transition: opacity 0.3s ease-out;
+} */
+.contenedor:hover .unnamed-character-style-17 {
+    opacity: 1;
+    margin-bottom: 105px;
+    transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
 }
 
 .trazado {
@@ -166,46 +175,51 @@ div {
     margin-left: auto;
     margin-bottom: 50px;
     margin-top: -30px;
-    margin-right: 150px;
+    margin-right: 100px;
     transition: margin-right 0.3s ease-out, margin-top 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 .contenedor:hover .trazado {
     opacity: 1;
-    margin-right: 100px;
+    margin-right: 70px;
     transition: margin-right 0.3s ease-out, margin-top 0.3s ease-out, opacity 0.3s ease-out;
 }
 
-.contenedor .unnamed-character-style-16, 
-.contenedor .unnamed-character-style-17 {
-    margin-right: 80px;
-    transition: margin-left 0.3s ease-out, margin-bottom 0.3s ease-out
+.contenedor .unnamed-character-style-16 {
+    transition: margin-left 0.3s ease-out;
 }
 
-.contenedor:hover .unnamed-character-style-16,
+.contenedor:hover .unnamed-character-style-16 {
+    transition: margin-left 0.3s ease-out;
+}
+
 .contenedor:hover .unnamed-character-style-17 {
-    transition: margin-left 0.3s ease-out, margin-bottom 0.3s ease-out
+    transition: margin-left 0.3s ease-out;
 }
 
 .borde-top {
-    /* width: 430px; */
-    height: 10px;
+    /* width: 252px; */
+    width: calc(var(--ancho-wrap - 40px) / 6);
+    height: 45px;
     z-index: 2;
-    position: absolute;
-    margin: 0 5px;
+    margin: 0 0 0 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     padding: 0px;
 }
   
 
 .base-flecha{
     border-top: solid 15px var(--unnamed-color-43752b);
-    z-index: 3;
-    /* width: 430px; */
-    width: 430px;
+    /* width: 252px; */
+    width: 100%;
     height: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 5px;
     transition: border-top 0.3s ease-out;
 }
 
@@ -219,4 +233,32 @@ div {
     line-height: 0px;
     margin: auto;
     transition: border-top 0.3s ease-out;
+}
+.selector{
+    top: 842px;
+    left: 573px;
+    width: 25px;
+    height: 25px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 3px solid var(--unnamed-color-98a92a);
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 3px solid var(--unnamed-color-98a92a);
+    border-radius: 50%;
+    opacity: 1;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.selector-punto{
+    top: 849px;
+    left: 311px;
+    width: 11px;
+    height: 11px;
+    background: var(--unnamed-color-095751) 0% 0% no-repeat padding-box;
+    background: #095751 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    opacity: 0;
+    margin: auto;
+    transition: opacity 0.3s ease-out;
 }

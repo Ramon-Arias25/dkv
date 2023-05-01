@@ -91,6 +91,7 @@ div {
 .contenedor:hover .unnamed-character-style-17 {
     opacity: 1;
     margin-bottom: 105px;
+    transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
 }
 
 #uno:hover .unnamed-character-style-17,
@@ -141,10 +142,12 @@ div {
 
 .contenedor .unnamed-character-style-17 {
     opacity: 0;
+    transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
 }
 
 .contenedor:hover .unnamed-character-style-17 {
     opacity: 1;
+    transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
 }
 
 .trazado {
