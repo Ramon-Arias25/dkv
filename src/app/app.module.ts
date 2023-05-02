@@ -9,7 +9,6 @@ import { ClienteComponent } from './components/cliente/cliente.component';
 import { MarketingComponent } from './components/marketing/marketing.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +20,7 @@ import { EquipoComponent } from './components/equipo/equipo.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
