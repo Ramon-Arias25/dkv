@@ -25,6 +25,14 @@ main {
     display: flex;
     justify-content: center;
     padding: 0 15%;
+    --header-height:100%;
+}
+
+.wrap-equipo{
+    /* background: var(--unnamed-color-095751) 0% 0% no-repeat padding-box; */
+    display: flex;
+    justify-content: center;
+    padding: 0 5% 0 0;
 }
 
 .equipo {
@@ -53,19 +61,18 @@ main {
     
 }
 
-.equipo-ul {
-    display: flex;
+/* .equipo-ul {
     align-items: center;
     margin: auto;
 } 
-
+*/
 .wrap-equipo-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 50px; 
 
-}
+} 
 
 .avatar{
     /* width: 362px; */
@@ -87,29 +94,65 @@ main {
     margin: 0;
 }
 
-/* #uno{
-    background: url('../../../assets/Elipse 30.png');
-    background-position: center;
-    background-size: cover;
-} */
-
-.my-list li {
+#carousel {
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+  }
+  
+  .item {
     display: none;
-}
-
-.my-list li.active {
-    display: block;
-    animation: fade-in 0.5s ease-in-out;
-}
-    @keyframes fade-in {
+    align-items: center;
+    margin: auto;
+  }
+  
+  .item.active {
+    display: flex;
+    animation: fade-in 1s;
+  }
+  
+  @keyframes fade-in {
     0% {
-        opacity: 0;
-        transform: translateY(10px);
+      opacity: 0;
     }
-
     100% {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
     }
+  }
 
-}
+  .wrap-direccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    justify-content: center;
+  }
+
+  .upimg {
+    transform: rotate(90deg);
+    height: 17.43;
+    width: 30;
+    margin-bottom: 30px;
+    opacity: 0.5;
+  }
+
+  .downimg {
+    transform: rotate(270deg);
+    height: 17.43;
+    width: 30;
+    margin-top: 30px;
+    opacity: 0.5;
+  }
+
+  .dotimg{
+    margin: 15px 0;
+    opacity: 0.5;
+  }
+
+  .dotActive{
+    opacity: 1;
+  }
+  
+  .imgActive {
+    opacity: 1;
+  }
