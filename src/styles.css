@@ -91,10 +91,13 @@ ol, ul {
     --unnamed-color-005650: #005650;
     --unnamed-color-85a228: #85A228;
     --unnamed-color-706961: #706961;
+    --unnamed-color-205000: #205000;
     
-    /* Font/text values */
-    --unnamed-font-family-lemon-milk-pro-ftr: LEMON MILK Pro FTR;
-    --unnamed-font-family-fs-me: FS Me;
+    /* Font/text values *//*"Arial", Sans-serif*/
+    /* --unnamed-font-family-lemon-milk-pro-ftr: LEMON MILK Pro FTR;
+    --unnamed-font-family-fs-me: FS Me; */
+    --unnamed-font-family-lemon-milk-pro-ftr: Arial, Sans-serif;
+    --unnamed-font-family-fs-me: Arial, Sans-serif;
     --unnamed-font-family-georgia: Georgia;
     --unnamed-font-style-normal: normal;
     --unnamed-font-weight-bold: bold;

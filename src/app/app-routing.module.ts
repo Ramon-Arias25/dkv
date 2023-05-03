@@ -5,12 +5,14 @@ import { MercadoComponent } from './components/mercado/mercado.component';
 import { ClienteComponent } from './components/cliente/cliente.component';
 import { MarketingComponent } from './components/marketing/marketing.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
+import { IFrameTemplateComponent } from './components/i-frame-template/i-frame-template.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'mercado', component: MercadoComponent },
   { path: 'cliente', component: ClienteComponent },
   { path: 'marketing', component: MarketingComponent },
   { path: 'equipo', component: EquipoComponent },
+  { path: 'iframe/:numero', component: IFrameTemplateComponent },
 ];
 
 @NgModule({

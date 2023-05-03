@@ -1,0 +1,22 @@
+<main>
+    <header>
+        <div class="arrow-left"></div>
+        <h2 class="unnamed-character-style-24" routerLink="/">
+             Investigación comercial
+        </h2>
+    </header>
+    <div class="iframe">
+        <div class="iframe-portada">
+            <p class="iframe-title">{{ iframeTitulo[this.numero] }}</p>
+
+            <!-- <p class="unnamed-character-style-18">&nbsp;Investigación</p> -->
+        </div>
+        <!-- <h2 class="unnamed-character-style-25">INVESTIGACIÓN</h2> -->
+        <div class="wrap-p">
+            <!-- <p class="unnamed-character-style-20">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dolor molestiae laborum quibusdam ipsa odio quam! Tenetur nisi accusantium dolor numquam hic. Perferendis exercitationem laudantium eos facere harum nihil fuga?
+            </p> -->
+            <iframe [src]="getIframeUrl()"  width="1280" height="680" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+    </div>
+</main>
