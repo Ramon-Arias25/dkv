@@ -1,9 +1,9 @@
 <main>
     <header>
-        <div class="arrow-left"></div>
-        <h2 class="unnamed-character-style-24" routerLink="/">
-             Investigación comercial
-        </h2>
+        <a (click)="goBack()" target="_self"><div class="arrow-left"></div></a>
+        <a ><h2 class="unnamed-character-style-24 InvestigacionComercial" (click)="goBack()">
+          Investigación comercial
+        </h2></a> 
     </header>
     <div class="iframe">
         <div class="iframe-portada">
@@ -16,7 +16,7 @@
             <!-- <p class="unnamed-character-style-20">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dolor molestiae laborum quibusdam ipsa odio quam! Tenetur nisi accusantium dolor numquam hic. Perferendis exercitationem laudantium eos facere harum nihil fuga?
             </p> -->
-            <iframe [src]="getIframeUrl()"  width="1280" height="680" frameborder="0" allowFullScreen="true"></iframe>
+            <iframe [src]="getIframeUrl()"  width="1280" height="680"></iframe><!--frameborder="0" allowFullScreen="true"-->
         </div>
     </div>
 </main>

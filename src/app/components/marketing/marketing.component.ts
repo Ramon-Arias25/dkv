@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-marketing',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./marketing.component.css']
 })
 export class MarketingComponent {
-  constructor() { }
+  constructor(
+    private location: Location
+  ) { }
 
   handleHover(id: string) {
     document.querySelectorAll(`#${id}`).forEach((sibling) => {
@@ -43,5 +46,9 @@ export class MarketingComponent {
       (selectorPuntoSibling as HTMLElement).style.opacity ='0';
       (selectorPuntoSibling as HTMLElement).style.transition ='opacity 0.3s ease-out';
     });
+  }
+
+  goBack() {
+    this.location.back();
   }
 }

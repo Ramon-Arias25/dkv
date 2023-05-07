@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-mercado',
@@ -6,16 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./mercado.component.css'],
 })
 export class MercadoComponent {
-  constructor() {}
+  
+  // constructor(
+  //   private location: Location
+  // ) { }
 
   ngOnInit(): void {}
-  // .borde-top:hover .base-flecha,
-  // .borde-top:hover .punta-flecha{
-  //     border-top: solid 20px var(--unnamed-color-98a92a);
-  //     transition: border-top 0.3s ease-out;
-  // }
-  // border-left: 19px solid transparent;
-  // border-right: 19px solid transparent;
+
   handleHover(id: string) {
     const siblings = document.querySelectorAll(`#${id}`);
     siblings.forEach((sibling) => {
@@ -46,11 +44,9 @@ export class MercadoComponent {
       (flechaSibling as HTMLElement).style.borderTop = 'solid 15px var(--unnamed-color-43752b)';
       (flechaSibling as HTMLElement).style.transition = 'border-top 0.3s ease-out';
     });
-    // const fondoSiblings = document.querySelectorAll(`#fondo-${id}`);
-
-    // fondoSiblings.forEach((flechaSibling) => {
-    //   (flechaSibling as HTMLElement).style.display = 'block';
-    //   (flechaSibling as HTMLElement).style.transition = 'display 0.3s ease-out';
-    // });
   }
+
+  // goBack() {
+  //   this.location.back();
+  // }
 }

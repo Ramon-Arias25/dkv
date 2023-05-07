@@ -432,3 +432,28 @@ ol, ul {
         transition: opacity 0.3s ease-out;
     }
     
+.arrow-left:hover {
+    transform: scale(0.8);
+}
+  
+.arrow-left:hover::after {
+    content: "";
+    animation: arrow-left-animation 0.5s; 
+}
+  
+  @keyframes arrow-left-animation {
+    0%, 100% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1); 
+    }
+  }
+
+.arrow-left:hover {
+    cursor: pointer;
+}
+
+.InvestigacionComercial{
+    cursor: pointer;
+}

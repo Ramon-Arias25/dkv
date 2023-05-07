@@ -20,4 +20,13 @@ describe('MercadoComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  constructor(
+    private location: Location;
+  ) { }
+
+
+  goBack() {
+    this.location.back();
+  }
 });

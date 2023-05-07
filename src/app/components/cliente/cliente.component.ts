@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-cliente',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./cliente.component.css'],
 })
 export class ClienteComponent {
-  constructor() {}
+  constructor(
+    private location: Location
+  ) { }
 
   ngOnInit(): void {}
 
@@ -47,4 +50,7 @@ export class ClienteComponent {
     });
   }
   
+  goBack() {
+    this.location.back();
+  }
 }

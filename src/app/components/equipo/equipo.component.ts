@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-equipo',
@@ -12,7 +13,9 @@ export class EquipoComponent implements OnInit {
   downimg!: NodeListOf<Element>;
   current: number = 0;
 
-  constructor() {}
+  constructor(
+    private location: Location
+  ) { }
 
   ngOnInit() {
     this.items = document.querySelectorAll('.item');
@@ -68,5 +71,7 @@ export class EquipoComponent implements OnInit {
       }    
     }
   }
-
+  goBack() {
+    this.location.back();
+  }
 }
