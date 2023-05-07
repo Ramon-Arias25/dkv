@@ -20,8 +20,8 @@ export class MercadoComponent {
     const siblings = document.querySelectorAll(`#${id}`);
     siblings.forEach((sibling) => {
       (sibling as HTMLElement).style.backgroundSize = '200%';
-      (sibling as HTMLElement).style.transition =
-        'background-size 0.3s ease-in-out';
+      (sibling as HTMLElement).style.transition = 'background-size 0.3s ease-in-out';
+      (sibling as HTMLElement).classList.add('oscurecer');
     });
     const flechaSiblings = document.querySelectorAll(`#base-flecha-${id},
                                                       #punta-flecha-${id}`);
@@ -36,8 +36,8 @@ export class MercadoComponent {
     const siblings = document.querySelectorAll(`#${id}`);
     siblings.forEach((sibling) => {
       (sibling as HTMLElement).style.backgroundSize = '170%';
-      (sibling as HTMLElement).style.transition =
-        'background-size 0.3s ease-in-out';
+      (sibling as HTMLElement).style.transition = 'background-size 0.3s ease-in-out';
+      (sibling as HTMLElement).classList.remove('oscurecer');
     });
     const flechaSiblings = document.querySelectorAll(`#base-flecha-${id},
                                                     #punta-flecha-${id}`);
@@ -46,5 +46,11 @@ export class MercadoComponent {
       (flechaSibling as HTMLElement).style.borderTop = 'solid 15px var(--unnamed-color-43752b)';
       (flechaSibling as HTMLElement).style.transition = 'border-top 0.3s ease-out';
     });
+    // const fondoSiblings = document.querySelectorAll(`#fondo-${id}`);
+
+    // fondoSiblings.forEach((flechaSibling) => {
+    //   (flechaSibling as HTMLElement).style.display = 'block';
+    //   (flechaSibling as HTMLElement).style.transition = 'display 0.3s ease-out';
+    // });
   }
 }

@@ -36,7 +36,6 @@ export class HomeComponent {
     });
     const inVisibleSiblings = document.querySelectorAll(`#${id} .unnamed-character-style-4, 
                                                          #${id} .unnamed-character-style-11`);
-                                                         console.log(inVisibleSiblings.length);
     inVisibleSiblings.forEach(inVisibleSibling => {
       (inVisibleSibling as HTMLElement).style.opacity = '0';
       (inVisibleSibling as HTMLElement).style.transition = 'opacity 0.3s ease-out';

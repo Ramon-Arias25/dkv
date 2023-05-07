@@ -1,8 +1,3 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 header {
     margin-top: -15vh;
     height: auto;
@@ -30,8 +25,9 @@ div {
 }
 
 .cliente {
-    /* max-width: 1600; */
-    margin: 104px 0px;
+    margin: 104px 0px 0px 0px;
+    --width--total: 100%;
+    --height--total: 100%;
 }
 
 .wrap,
@@ -55,7 +51,6 @@ div {
 }
 
 .contenedor {
-    width: calc(var(--ancho-wrap - 40px) / 6);
     height: 468px;
 }
 
@@ -76,7 +71,7 @@ div {
     font: normal normal normal 15px/22px FS Me;
     letter-spacing: 0px;
     opacity: 1;
-    margin: calc(132px - 179px) 930px 30px 0px;
+    margin: calc(132px - 179px) 930px 0px 0px;
     display: flex;
 }
 
@@ -93,11 +88,9 @@ div {
 }
 
 
-
-
-/* #tres .unnamed-character-style-17 {
-    margin-top: -30px;
-} */
+.contenedor{
+    z-index: 8;
+}
 
 #uno:hover .unnamed-character-style-17,
 #dos:hover .unnamed-character-style-17,
@@ -119,8 +112,6 @@ div {
     position: relative;
 }
 
-
-
 .trazado {
     background-size: cover;
 }
@@ -141,13 +132,6 @@ div {
     background-image: url("../../../assets/dimensionamientoAccionesComercialesEinformes (1).png");
 }
 
-/* #cuatro .unnamed-character-style-16 {
-    margin-bottom: -14px;
-} */
-
-/* #cuatro:hover .unnamed-character-style-17 {
-    margin-top: 14px;
-} */
 #cinco {
     background-image: url("../../../assets/geomarketingEmpresas (1).png");
 }
@@ -157,10 +141,6 @@ div {
     transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
 }
 
-/* .contenedor:hover .unnamed-character-style-17 {
-    opacity: 1;
-    transition: opacity 0.3s ease-out;
-} */
 .contenedor:hover .unnamed-character-style-17 {
     opacity: 1;
     margin-bottom: 105px;
@@ -189,19 +169,15 @@ div {
     transition: margin-left 0.3s ease-out;
 }
 
-.contenedor:hover .unnamed-character-style-16 {
-    transition: margin-left 0.3s ease-out;
-}
-
+.contenedor:hover .unnamed-character-style-16,
 .contenedor:hover .unnamed-character-style-17 {
     transition: margin-left 0.3s ease-out;
 }
 
 .borde-top {
-    /* width: 252px; */
     width: calc(var(--ancho-wrap - 40px) / 6);
     height: 45px;
-    z-index: 2;
+    z-index: 9;
     margin: 0 0 0 5px;
     display: flex;
     justify-content: center;
@@ -216,7 +192,7 @@ div {
     width: 100%;
     height: 8px;
     position: absolute;
-    z-index: 1;
+    z-index: 8;
     top: 0;
     left: 0;
     margin: 0 0 0 5px;
@@ -234,6 +210,7 @@ div {
     margin: auto;
     transition: border-top 0.3s ease-out;
 }
+
 .selector{
     top: 842px;
     left: 573px;
@@ -261,4 +238,15 @@ div {
     opacity: 0;
     margin: auto;
     transition: opacity 0.3s ease-out;
+}
+
+.oscurecer::before {
+    content: "";
+    position: absolute;
+    width: var(--width--total);
+    height: var(--height--total);
+    margin: 0 5px 0 0;
+    background-color: rgba(0, 0, 0, 0.20);
+    transition: background-color 0.3s ease-out;
+    transition: color 0.3s ease-out;
 }

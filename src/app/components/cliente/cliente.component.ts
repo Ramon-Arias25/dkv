@@ -14,6 +14,7 @@ export class ClienteComponent {
     document.querySelectorAll(`#${id}`).forEach((sibling) => {
       (sibling as HTMLElement).style.backgroundSize = '220%';
       (sibling as HTMLElement).style.transition ='background-size 0.3s ease-in-out';
+      (sibling as HTMLElement).classList.add('oscurecer');
     });
     
     document.querySelectorAll(`#base-flecha-${id},#punta-flecha-${id}`).forEach((flechaSibling) => {
@@ -32,6 +33,7 @@ export class ClienteComponent {
     document.querySelectorAll(`#${id}`).forEach((sibling) => {
       (sibling as HTMLElement).style.backgroundSize = '200%';
       (sibling as HTMLElement).style.transition ='background-size 0.3s ease-in-out';
+      (sibling as HTMLElement).classList.remove('oscurecer');
     });
 
     document.querySelectorAll(`#base-flecha-${id},#punta-flecha-${id}`).forEach((flechaSibling) => {

@@ -1,8 +1,3 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 header {
     margin-top: -15vh;
     height: auto;
@@ -20,20 +15,17 @@ header {
     margin-left: -50px;
     margin-right: 15px;
 }
-
 main {
     margin: 50px 80px;
 }
-
 div {
     box-sizing: border-box;
 }
-
 .cliente {
-    /* max-width: 1600; */
     margin: 104px 0px;
+    --width--total: 100%;
+    --height--total: 100%;
 }
-
 .wrap,
 .contenedor,
 .contenedor p,
@@ -42,31 +34,24 @@ div {
 .trazado {
     transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
 }
-
 .wrap {
     display: flex;
     justify-content: center;
     align-items: center;
-    --ancho-wrap: 100%;
 }
-
 .wrap-item {
     position: absolute;
 }
-
 .contenedor {
-    width: calc(var(--ancho-wrap - 50px) / 6);
-    height: 468px;
+    --ancho-wrap: 100%;
+    --alto-wrap:100%;
 }
-
 .overflow-hidden {
     overflow: hidden;
 }
-
 .contenedor:hover {
     background-size: 250%;
 }
-
 .cliente-portada {
     top: 179px;
     left: 190px;
@@ -78,7 +63,6 @@ div {
     margin: calc(132px - 179px) 930px 30px 0px;
     display: flex;
 }
-
 .wrap-p {
     top: 289px;
     left: 190px;
@@ -86,28 +70,19 @@ div {
     height: 118px;
     letter-spacing: 0px;
 }
-
 .contenedor p {
     margin: 0px 10px 0px 10px;
 }
-
 .contenedor:hover .unnamed-character-style-17 {
     opacity: 1;
     margin-bottom: 105px;
 }
-
-
-/* #tres .unnamed-character-style-17 {
-    margin-top: -30px;
-} */
-
 #uno:hover .unnamed-character-style-17,
 #dos:hover .unnamed-character-style-17,
 #cuatro:hover .unnamed-character-style-17,
 .contenedor .unnamed-character-style-17 {
     transition: margin-bottom 0.3s ease-out;
 }
-
 #uno,
 #dos,
 #tres,
@@ -116,43 +91,35 @@ div {
 #seis{
     background-size: 200%;
 }
-
 .trazado {
     background-size: cover;
 }
-
 #uno {
     background-image: url("../../../assets/porQueLlega(2).png");
+    --ancho-wrap: 100%;
+    --alto-wrap:100%;
 }
-
 #dos {
     background-image: url("../../../assets/comoEs(2).png");
 }
-
 #tres {
     background-image: url("../../../assets/comoActua(2).png");
 }
-
 #cuatro {
     background-image: url("../../../assets/dondeVive(2).png");
 }
-
 #cuatro .unnamed-character-style-16 {
     margin-bottom: -14px;
 }
-
 #cuatro:hover .unnamed-character-style-17 {
     margin-top: 14px;
 }
-
 #cinco {
     background-image: url("../../../assets/queLeMotiva(2).png");
 }
-
 #seis {
     background-image: url("../../../assets/porQueSeVa(2).png");
 }
-
 .contenedor .unnamed-character-style-17 {
     opacity: 0;
 }
@@ -160,7 +127,6 @@ div {
 .contenedor:hover .unnamed-character-style-17 {
     opacity: 1;
 }
-
 .trazado {
     background-image: url("../../../assets/Trazado 5513.svg");
     width: 25px;
@@ -172,16 +138,13 @@ div {
     margin-right: 60px;
     transition: margin-right 0.3s ease-out, margin-top 0.3s ease-out, opacity 0.3s ease-out;
 }
-
 .contenedor:hover .trazado {
     opacity: 1;
     margin-right: 20px;
     margin-bottom: 50px;
     transition: margin-right 0.3s ease-out, margin-top 0.3s ease-out, opacity 0.3s ease-out;
 }
-
 .borde-top {
-    /* width: 252px; */
     width: calc(var(--ancho-wrap - 50px) / 6);
     height: 45px;
     z-index: 2;
@@ -191,23 +154,19 @@ div {
     align-items: start;
     padding: 0px;
 }
-  
-
 .base-flecha{
     border-top: solid 15px var(--unnamed-color-43752b);
     z-index: 3;
-    /* width: 252px; */
     width: 100%;
     height: 8px;
     transition: border-top 0.3s ease-out;
 }
-
 .punta-flecha{
     width: 0px;
     height: 0px;
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
-    border-top: 15px solid var(--unnamed-color-43752b);/*var(--unnamed-color-98a92a);*/
+    border-top: 15px solid var(--unnamed-color-43752b);
     font-size: 0px;
     line-height: 0px;
     margin: auto;
@@ -228,7 +187,6 @@ div {
     display: flex;
     align-items: center;
 }
-
 .selector-punto{
     top: 849px;
     left: 311px;
@@ -240,4 +198,13 @@ div {
     opacity: 0;
     margin: auto;
     transition: opacity 0.3s ease-out;
+}
+.oscurecer::before {
+    content: "";
+    position: absolute;
+    width: 286px;
+    height: 410px;
+    margin: 0 5px 0 0;
+    background-color: rgba(0, 0, 0, 0.20);
+    transition: background-color 0.3s ease-out;
 }
