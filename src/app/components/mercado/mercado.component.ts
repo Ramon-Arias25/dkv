@@ -28,6 +28,11 @@ export class MercadoComponent {
       (flechaSibling as HTMLElement).style.borderTop = 'solid 15px var(--unnamed-color-98a92a)';
       (flechaSibling as HTMLElement).style.transition = 'border-top 0.3s ease-out';
     });
+    const pSiblings = document.querySelectorAll(`#${id}-p`);
+
+    pSiblings.forEach((pSibling) => {
+(pSibling as HTMLElement).style.zIndex = '1';
+});
   }
 
   handleMouseLeave(id: string) {

@@ -128,6 +128,7 @@ div {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.20);
     transition: background-color 0.3s ease-out;
+    text-decoration-color: white;
 }
 
 #dos {
@@ -179,15 +180,17 @@ div {
 }
 
 .contenedor .unnamed-character-style-16 {
-    transition: margin-left 0.3s ease-out;
+    transition: margin-left 0.3s ease-out, transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
 }
 
 .contenedor:hover .unnamed-character-style-16 {
-    transition: margin-left 0.3s ease-out;
+    transition: margin-left 0.3s ease-out, transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
+    z-index: 1;
 }
 
 .contenedor:hover .unnamed-character-style-17 {
-    transition: margin-left 0.3s ease-out;
+    transition: margin-left 0.3s ease-out, transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
+    z-index: 1;
 }
 
 .borde-top {
@@ -222,7 +225,7 @@ div {
     margin: auto;
     transition: border-top 0.3s ease-out;
 }
-.fondo {
+/* .fondo {
     width: var(--width--total);
     height: var(--height--total);
     background-color: rgb(20, 20, 20);
@@ -231,4 +234,4 @@ div {
     z-index: 6;
     margin-top: -6%;
     opacity: 0.5;
-}
+} */

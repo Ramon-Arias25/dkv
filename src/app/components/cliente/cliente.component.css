@@ -33,6 +33,7 @@ div {
 .contenedor .unnamed-character-style-17,
 .trazado {
     transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
+    z-index: 1;
 }
 .wrap {
     display: flex;
@@ -76,6 +77,7 @@ div {
 .contenedor:hover .unnamed-character-style-17 {
     opacity: 1;
     margin-bottom: 105px;
+    margin-right: 100px;
 }
 #uno:hover .unnamed-character-style-17,
 #dos:hover .unnamed-character-style-17,
@@ -126,6 +128,7 @@ div {
 
 .contenedor:hover .unnamed-character-style-17 {
     opacity: 1;
+    z-index: 1;
 }
 .trazado {
     background-image: url("../../../assets/Trazado 5513.svg");

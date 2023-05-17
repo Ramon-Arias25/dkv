@@ -37,6 +37,7 @@ div {
 .contenedor .unnamed-character-style-17,
 .trazado {
     transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
+    z-index: 1;
 }
 
 .wrap {
@@ -139,6 +140,7 @@ div {
 .contenedor:hover .unnamed-character-style-17 {
     opacity: 1;
     margin-bottom: 105px;
+    margin-right: 50px;
     transition: transform 0.3s ease-out, margin-bottom 0.3s ease-out, opacity 0.3s ease-out, margin-right 0.3s ease-out;
 }
 
@@ -162,11 +164,13 @@ div {
 
 .contenedor .unnamed-character-style-16 {
     transition: margin-left 0.3s ease-out;
+    z-index: 1;
 }
 
 .contenedor:hover .unnamed-character-style-16,
 .contenedor:hover .unnamed-character-style-17 {
     transition: margin-left 0.3s ease-out;
+    z-index: 1;
 }
 
 .borde-top {
