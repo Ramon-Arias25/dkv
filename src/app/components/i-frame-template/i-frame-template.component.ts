@@ -29,7 +29,7 @@ export class IFrameTemplateComponent{
   /*13 */ 'https://app.powerbi.com/reportEmbed?reportId=1be6869d-1259-4ce0-81ff-58a07bca0fd0&autoAuth=true&ctid=38fd77bb-cf74-4d5c-9b52-df4f93ca63db',//campanias de marketing
   /*14 */ 'https://app.powerbi.com/reportEmbed?reportId=d30a1849-2bf2-478b-bd9f-e487fce301a0&autoAuth=true&ctid=38fd77bb-cf74-4d5c-9b52-df4f93ca63db',//dimensionamiento acciones 
   /*15 */ 'https://informa.inatlas.com/#/home',//geomarketing empresas
-  /*16 */ 'https://dkvseguros.sharepoint.com/:f:/r/sites/InvestigacinComercial83/Repositorio%20de%20estudios/Repositorio%20de%20Estudios?csf=1&web=1&e=bwU7za',//geomarketing empresas
+  /*16 */ 'https://dkvseguros.sharepoint.com/:f:/r/sites/InvestigacinComercial83/Repositorio%20de%20estudios/Repositorio%20de%20Estudios?csf=1&web=1&e=bwU7za',//REPOSITORIO DE ESTUDIOS
     ];
 
   iframeTitulo = [
@@ -48,7 +48,8 @@ export class IFrameTemplateComponent{
     'Estudio de bajas',
     'Campañas de marketing',
     'Dimensionamiento acciones comerciales',
-    'Geomarketing empresas'
+    'Geomarketing empresas',
+    'REPOSITORIO DE ESTUDIOS'
   ];
 
   ngOnInit() {
